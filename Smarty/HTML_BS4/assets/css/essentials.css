@@ -247,6 +247,7 @@ section.dark pre {
 
 img.img-fluid {
 	display:inline-block;
+	height: 220px
 }
 
 /* IE & Mozilla fix */

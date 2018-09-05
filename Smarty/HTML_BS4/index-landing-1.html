@@ -169,6 +169,100 @@
 			</section>
 			<!-- /HOME -->
 
+			<!-- Menu Déroulant Test-->
+			<select>
+				<option>Banane</option>
+				<option>Cerise</option>
+				<option>Citron</option>
+			  </select>
+			  <select>
+				<optgroup label="Fruits">
+				  <option>Banane</option>
+				  <option selected>Cerise</option>
+				  <option>Citron</option>
+				</optgroup>
+				<optgroup label="Légumes">
+				  <option>Carotte</option>
+				  <option>Aubergine</option>
+				  <option>Pomme de terre</option>
+				</optgroup>
+			  </select>
+				  <label for="onFruit">Quel est votre fruit préféré ?</label>
+    				<input type="text" id="onFruit" list="maSuggestion" />
+    				<datalist id="maSuggestion">
+     				 <option>Pomme</option>
+      				<option>Banane</option>
+     				 <option>Mûre</option>
+     				 <option>Airelles</option>
+     				 <option>Citron</option>
+     				 <option>Litchi</option>
+     				 <option>Pêche</option>
+     				 <option>Poire</option>
+					</datalist>
+					
+					<!-- TEST ici sur combo box-->
+					<label for="myFruit">Quel est votre fruit préféré ? (avec repli)</label>
+					<input type="text" id="myFruit" name="fruit" list="fruitList">
+    
+					<datalist id="fruitList">
+  					<label for="suggestion">ou choisissez un fruit</label>
+  						<select id="suggestion" name="altFruit">
+    					<option>Pomme</option>
+    					<option>Banane</option>
+   						<option>Mûres</option>
+    					<option>Airelles</option>
+   						<option>Citron</option>
+    					<option>Litchi</option>
+   						 <option>Pêche</option>
+   						 <option>Poire</option>
+  						</select>
+					</datalist>
+
+					<!--test formulaire  Visa -->
+					<section>
+						<h2>Informations de paiement</h2>
+						<p>
+						  <label for="card">
+							<span>Type de carte :</span>
+						  </label>
+						  <select id="card" name="usercard">
+							<option value="visa">Visa</option>
+							<option value="mc">Mastercard</option>
+							<option value="amex">American Express</option>
+						  </select>
+						</p>
+						<p>
+						  <label for="number">
+							<span>Numéro de carte :</span>
+							<strong><abbr title="required">*</abbr></strong>
+						  </label>
+						  <input type="text" id="number" name="cardnumber">
+						</p>
+						<p>
+						  <label for="date">
+							<span>Validité :</span>
+							<strong><abbr title="required">*</abbr></strong>
+							<em>format mm/aa</em>
+						  </label>
+						  <input type="text" id="date" name="expiration">
+						</p>
+					</section>
+
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+	<input type="range" id="a" value="50">100
+	+<input type="number" id="b" value="50">
+	=<output name="x" for="a b"></output>
+  </form>
+
+			<!-- Champs Test-->
+			<!--<label>Password:</label>-->
+			<input type="password" name="password" id="password" placeholder="Type password"  >
+			<br/> 
+			<button type="button" onclick="if(password.type=='text')"
+			password.type='text';
+			else
+			password.type='text';">Cliquer ici</button>
 
 
 
@@ -180,6 +274,7 @@
 						<h2>Our Features</h2>
 						<p class="lead font-lato">Lorem ipsum dolor sit amet adipiscium elit</p>
 						<hr />
+						
 					</header>
 
 					<!-- FEATURED BOXES 3 -->
